@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ORBIT · Applied AI Engineering
 
-## Getting Started
+A surreal six-month field guide from backend engineer to applied AI engineer. 180 days, 1–2 hours a day, three projects, one orbit.
 
-First, run the development server:
+**Live demo:** https://orbit-ai-roadmap.vercel.app
+
+## What this is
+
+The full "Applied AI Engineering — The realistic six-month programme" roadmap, turned into an immersive, interactive website:
+
+- A breathing signal orb with seven orbiting phase markers
+- Scroll narrative that shifts from deep-space ink to aurora to warm dawn
+- Live day counter, countdowns to every milestone, current-week auto-highlight
+- Full 26-week syllabus with phase filters and search
+- Three project dossiers
+- Curated Level A/B/C resource library
+- Budget, study method, weekly rhythm, five-question understanding test
+- Interactive 12-competency tracker persisted in the browser
+
+## Stack
+
+Next.js 16 · TypeScript · Tailwind CSS v4 · Motion · Lenis · lucide-react
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+  app/          # routes: /, /roadmap, /projects, /toolkit, /career, /tracker
+  components/   # layout, ambient, primitives, domain
+  hooks/        # reduced motion, local storage, current week, in-view phase
+  lib/          # roadmap data (single source of truth), dates, cn
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Deployed on Vercel. Source on GitHub: https://github.com/freakinrkb/orbit-ai-roadmap
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Credits
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Roadmap content derived from the "Applied AI Engineering — The realistic six-month programme" curriculum. Built with Next.js.
